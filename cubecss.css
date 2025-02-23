@@ -141,7 +141,7 @@ nav ul li a:hover {
 
 .project-details {
   display: inline-block;
-  text-align: left;
+  text-align: center;
   vertical-align: top;
   width: 100%;
   box-sizing: border-box;
