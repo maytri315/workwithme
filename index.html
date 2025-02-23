@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="cubecss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="home" class="page">
+        <h1>Maytri Shah</h1>
+        <p>Welcome to my portfolio</p>
+    </section>
+    <section id="about" class="page">
+        <h1>About Me</h1>
+        <p id="typing-text"></p>
+    </section>
+
+    <section id="projects" class="page">
+        <h1>Projects</h1>
+        <div class="project">
+          <a href="path-to-image-one.jpg" target="_blank"><img src="C:/Users/Admin/Pictures/Screenshots/Screenshot 2025-02-24 014923.png" alt="Project One" class="project-image"></a>
+          <div class="project-details">
+            <h2>Interactive Portfolio</h2>
+            <p>A fully responsive and interactive portfolio showcasing various web development projects.</p>
+          </div>
+        </div>
+        <div class="project">
+          <a href="https://maytri315.github.io/notes/" target="_blank"><img src="C:/Users/Admin/Pictures/Screenshots/notes.png" alt="Project Two" class="project-image"></a>
+          <div class="project-details">
+            <h2>Note-Taking Web Application</h2>
+            <p>This project is a dynamic and interactive note-taking web application built using HTML, CSS, and JavaScript. It allows users to add, edit, search, and delete notes efficiently within a visually appealing user interface.</p>
+          </div>
+        </div>
+        <div class="project">
+          <a href="https://maytri315.github.io/web-pages/" target="_blank"><img src="C:/Users/Admin/Pictures/Screenshots/3d movie.png" alt="Project Three" class="project-image"></a>
+          <div class="project-details">
+            <h2>Movie List with 3D Background</h2>
+            <p>This project is a dynamic movie list application featuring a visually striking 3D background using Three.js. Users can add, edit, and delete movie entries, all within an interactive and responsive user interface.</p>
+          </div>
+        </div>
+      </section>
+      
+      <section id="contact" class="page">
+        <h1>Contact</h1>
+        <p>Feel free to reach out to me on <a href="https://www.linkedin.com/in/maytri-shah-299834275/" target="_blank">LinkedIn</a>.</p>
+    </section>
+    <div id="scrollButton" class="scroll-button" onclick="scrollToNextSection()"><i class="fas fa-chevron-down"></i></div>
+    <script src="cubejava.js"></script>
+</body>
+</html>

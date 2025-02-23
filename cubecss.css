@@ -1,0 +1,245 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  font-family: 'Arial', sans-serif;
+  scroll-behavior: smooth;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 10px 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #007bff;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  transition: background 0.6s ease;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.page h1 {
+  font-size: 3em;
+  margin: 0;
+}
+
+.page p {
+  font-size: 1.5em;
+  max-width: 600px;
+}
+
+#home {
+  background: url('home-bg.jpg') no-repeat center center / cover;
+}
+
+#about {
+  background: url('about-bg.jpg') no-repeat center center / cover;
+}
+
+#projects {
+  background: url('projects-bg.jpg') no-repeat center center / cover;
+}
+
+#contact {
+  background: url('contact-bg.jpg') no-repeat center center / cover;
+}
+
+.scroll-button {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 2em;
+  cursor: pointer;
+  color: #007bff;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.scroll-button:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+#typing-text {
+  border-right: .15em solid orange;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 1.5em;
+  color: #333;
+  animation: blink-caret .75s step-end infinite;
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: orange; }
+}
+
+#projects {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.project {
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.project-image {
+  width: 100%;
+  /* Adjust the size as needed */
+  height: auto;
+  margin-right: 20px;
+}
+
+.project-details {
+  display: inline-block;
+  text-align: left;
+  vertical-align: top;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.project-details h2 {
+  font-size: 1.5em;
+  color: #333;
+}
+
+.project-details p {
+  font-size: 1.1em;
+  color: #666;
+}
+
+.project-details a {
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+.project-details a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile Styles */
+@media (max-width: 600px) {
+  nav ul {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  nav ul li {
+      margin: 5px 0;
+  }
+
+  .page {
+      padding: 0 10px;
+  }
+
+  .project-image {
+      width: 100%;
+      height: auto;
+  }
+
+  .project-details h2 {
+      font-size: 1.2em;
+  }
+
+  .project-details p {
+      font-size: 1em;
+  }
+}
+/* Add this CSS to your existing stylesheet */
+
+#projects {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 20px;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  max-width: 200px;
+  margin-bottom: 10px;
+}
+
+.project-details {
+  text-align: center;
+}
+
+/* Mobile Styles */
+@media (max-width: 600px) {
+  #projects {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, 1fr);
+  }
+
+  .project {
+      padding: 10px;
+  }
+
+  .project-image {
+      max-width: 150px;
+  }
+}
