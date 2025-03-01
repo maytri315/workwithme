@@ -22,7 +22,7 @@ This project is a dynamic movie list application featuring a visually striking 3
 
 ## Contact
 
-Feel free to reach out to me on [LinkedIn](https://www.linkedin.com/in/maytri-shah-299834275/) or send an email to maytrishah@example.com. I'm always open to new opportunities and collaborations!
+Feel free to reach out to me on [LinkedIn](https://www.linkedin.com/in/maytri-shah-299834275/) or send an email to maxspotify722@gmail.com. I'm always open to new opportunities and collaborations!
 
 ---
 
