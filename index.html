@@ -209,7 +209,7 @@
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
-                <li><a href="internship_final_apply.pdf" class="nav-link" target="_blank">Resume</a></li>
+                <li><a href="internship_final_apply.pdf" class="nav-link" target="_blank" id="resumeLink">Resume</a></li>
             </ul>
         </nav>
     </header>
@@ -300,6 +300,7 @@
             const takeALook = document.getElementById('takeALook');
             const popupCard = document.getElementById('popupCard');
             const closeBtn = document.querySelector('.close-btn');
+            const resumeLink = document.getElementById('resumeLink');
 
             takeALook.addEventListener('click', () => {
                 popupCard.classList.add('visible');
@@ -307,6 +308,15 @@
 
             closeBtn.addEventListener('click', () => {
                 popupCard.classList.remove('visible');
+            });
+
+            // Fallback for Resume link
+            resumeLink.addEventListener('click', (e) => {
+                // Try opening the PDF
+                const pdfUrl = 'internship_final_apply.pdf';
+                window.open(pdfUrl, '_blank');
+                // Optional: Alert if there’s an issue (for debugging)
+                // If the PDF doesn’t open, check the console for errors
             });
 
             // Three.js for background bubbles
